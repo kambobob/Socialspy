@@ -1,0 +1,18 @@
+name: SocialSpy
+version: 1.0.0
+main: dev.example.socialspy.SocialSpyPlugin
+api-version: '26.2'
+folia-supported: true
+description: Lets staff see players' private messages.
+
+commands:
+  socialspy:
+    description: Toggle seeing players' private messages.
+    usage: /<command> [on|off|status]
+    aliases: [ss]
+    permission: socialspy.use
+
+permissions:
+  socialspy.use:
+    description: Use /socialspy and see private messages.
+    default: op
